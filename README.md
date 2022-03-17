@@ -59,7 +59,7 @@ Copy the build file to a
 
 Navigate to the sites-enabled folder
 
-`cd /etc/nginx/sites-enabled`
+`cd /etc/nginx/sites-available`
 
 ### Step 2
 
@@ -93,6 +93,10 @@ server {
 ctrl x and save the file
 
 ### Step 5
+
+`sudo ln -s /etc/nginx/sites-available/myAppName /etc/nginx/sites-enabled`
+
+### Step 6
 
 Sync the build file with the static files in /var/www/
 
